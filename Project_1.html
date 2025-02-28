@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html{
+            background-image: url("pexels-victor-freitas-841130.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        body {
+            padding: 0px;
+            margin: 0px;
+        }  
+
+            .left {
+                display: inline-block;
+                /* border: 2px solid red;*/
+                position: absolute;
+                left: 60px;
+                top: 15px;
+            }
+
+            .left img {
+                width: 136px;
+                /* filter:invert(100%);  */
+            }
+
+            .left div {
+                text-align: center;
+                font-size: 26px;
+                text-align: center;
+                color: aqua;
+            }
+
+            .mid {
+                display: bolck;
+                width: 45%;
+                margin: 29px auto;
+                /* background-color:blue; */
+                /* border: 2px solid green;	 */
+		        border-radius:200px;
+            }
+
+            .right {
+                position: absolute;
+                right: 34px;
+                top: 33px;
+                display: inline-block;
+                /* border: 2px solid yellow;*/
+            }
+
+            .navabr {
+                display: inline-block;
+            }
+
+            .navbar li {
+                display: inline-block;
+                font-size: 20px;
+            }
+
+            .navbar li a {
+                color: black;
+                text-decoration: none;
+                padding: 34px 23px;
+                color: aqua;
+            }
+
+            .navbar li a:hover,
+            .navbar li a:active {
+                text-decoration: underline;
+                color: gray;
+            }
+
+            .btn {
+                margin: 0px 9px;
+                padding: 4px 14px;
+                color:rgb(31, 100, 100);
+                border: 2px solid black;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color:aquamarine;
+            }
+
+            .container {
+                border: 2px solid rgb(99, 77, 77);
+                margin: 160px 80px;
+                padding: 75px;
+                width: 33%;
+                border-radius: 28px;
+            }
+
+            .form-group input {
+                text-align: center;
+                display: block;
+                width: 500px;
+                padding: 1px;
+                border: 2px solid black;
+                margin: 11px auto;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 8px;
+            }
+
+            .container h1 {
+                text-align: center;
+            }
+
+            .container button {
+                display: block;
+                width: 500px;
+                margin: auto;
+            }
+            /* img{
+                filter: blur(20px);
+            } */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="E:\webdevlopment\projects\image\bg.jpg.jpg" alt="">
+            <div>Gunda Gym</div>
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!--right box for button-->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Nagpur now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email ">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
